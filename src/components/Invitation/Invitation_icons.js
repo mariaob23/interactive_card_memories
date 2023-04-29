@@ -1,17 +1,17 @@
-import "./Styles/Greetings.css"
-import Birthdayhat from "./Styles/Assets/Birthday hat.png"
-import Cake from "./Styles/Assets/Cake.png"
-import Chat from "./Styles/Assets/Chat.png"
-import ChristmasCard from "./Styles/Assets/Christmas Card.png"
-import Gift from "./Styles/Assets/Gift.png"
-import Hearts from "./Styles/Assets/Hearts.jpg"
-import Letter from "./Styles/Assets/Letter.png"
-import mail from "./Styles/Assets/mail.png"
-import Sparklingletter from "./Styles/Assets/Sparkling letter.png"
-import Star from "./Styles/Assets/Star.webp"
-export const Greetings_icons = (setWorkIcon,horizontally, setHorizontally, vertically, setVertically) => {
-    const arregloicono = [{ ID: 1, img: Cake }, { ID: 2, img: Chat }, { ID: 3, img: ChristmasCard }, {ID: 4, img: Gift}, {ID: 5, img: Hearts}]
-    const arregloicono2 = [{ ID: 6, img: Letter }, { ID: 7, img: mail }, { ID: 8, img: Sparklingletter  }, {ID: 9, img: Star}, {ID: 10, img: Birthdayhat}] 
+import "../Styles/Greetings.css"
+import Anniversary from "./Styles/Anniversary.png"
+import Balloon from "./Styles/Balloon.png"
+import Birthday_celebration from "./Styles/Birthday_celebration.png"
+import Happy_letter from "./Styles/Happy_letter.png"
+import Invite from "./Styles/Invite.png"
+import Love from "./Styles/Love.png"
+import Proposal from "./Styles/Proposal.png"
+import Star from "./Styles/Star.png"
+import VIP_event from "./Styles/VIP_event.png"
+import Wedding_rings from "./Styles/Wedding_rings.png"
+export const Invitation_icons = (setWorkIcon,horizontally, setHorizontally, vertically, setVertically) => {
+    const arregloicono = [{ ID: 1, img: Anniversary }, { ID: 2, img: Balloon }, { ID: 3, img: Birthday_celebration }, {ID: 4, img: Happy_letter}, {ID: 5, img: Invite}]
+    const arregloicono2 = [{ ID: 6, img: Love }, { ID: 7, img: Proposal }, { ID: 8, img: Star  }, {ID: 9, img: VIP_event}, {ID: 10, img: Wedding_rings}] 
     
     return (
     <div>
@@ -41,4 +41,3 @@ export const Greetings_icons = (setWorkIcon,horizontally, setHorizontally, verti
     </div>
   )
 }
-                

@@ -1,17 +1,17 @@
-import "./Styles/Greetings.css"
-import Birthdayhat from "./Styles/Assets/Birthday hat.png"
-import Cake from "./Styles/Assets/Cake.png"
-import Chat from "./Styles/Assets/Chat.png"
-import ChristmasCard from "./Styles/Assets/Christmas Card.png"
-import Gift from "./Styles/Assets/Gift.png"
-import Hearts from "./Styles/Assets/Hearts.jpg"
-import Letter from "./Styles/Assets/Letter.png"
-import mail from "./Styles/Assets/mail.png"
-import Sparklingletter from "./Styles/Assets/Sparkling letter.png"
-import Star from "./Styles/Assets/Star.webp"
-export const Greetings_icons = (setWorkIcon,horizontally, setHorizontally, vertically, setVertically) => {
-    const arregloicono = [{ ID: 1, img: Cake }, { ID: 2, img: Chat }, { ID: 3, img: ChristmasCard }, {ID: 4, img: Gift}, {ID: 5, img: Hearts}]
-    const arregloicono2 = [{ ID: 6, img: Letter }, { ID: 7, img: mail }, { ID: 8, img: Sparklingletter  }, {ID: 9, img: Star}, {ID: 10, img: Birthdayhat}] 
+import "../components/Styles/Greetings.css"
+import Happy from "./Styles/Happy.png"
+import Joy from "./Styles/Joy.png"
+import praise from "./Styles/praise.png"
+import Pray from "./Styles/Pray.png"
+import Prize from "./Styles/Prize.png"
+import Religions from "./Styles/Religions.png"
+import Thanks from "./Styles/Thanks.png"
+import giveheart from "./Styles/giveheart.png"
+import hug from "./Styles/hug.png"
+import Shareheart from "./Styles/Shareheart.png"
+export const Gratitud_icons = (setWorkIcon,horizontally, setHorizontally, vertically, setVertically) => {
+    const arregloicono = [{ ID: 1, img: Happy }, { ID: 2, img: Joy }, { ID: 3, img: praise }, {ID: 4, img: Pray}, {ID: 5, img: Prize}]
+    const arregloicono2 = [{ ID: 6, img: Religions }, { ID: 7, img: Thanks }, { ID: 8, img: giveheart  }, {ID: 9, img: hug}, {ID: 10, img: Shareheart}] 
     
     return (
     <div>
@@ -41,4 +41,3 @@ export const Greetings_icons = (setWorkIcon,horizontally, setHorizontally, verti
     </div>
   )
 }
-                

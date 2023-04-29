@@ -1,11 +1,9 @@
 import "./App.css"
-import { Greetings } from "./components/Greetings";
-import { Greetings_fontsizes } from "./components/Greetings_fontsizes";
-import Homepage from "./components/Homepage";
+import { Approute } from "./Router/Approute";
 const App = () => {
   return (<div>
-    <Greetings_fontsizes/>
+    <Approute/>
 
   </div>)
-};
+}
 export default App;

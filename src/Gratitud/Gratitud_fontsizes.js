@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export const Greetings_fontsizes = (text,setText, horizontally,setHorizontally, size,setSize, vertically,setVertically) => {
+export const Gratitud_fontsizes = (text,setText, horizontally,setHorizontally, size,setSize, vertically,setVertically) => {
   
     console.log(size) 
     console.log(horizontally)

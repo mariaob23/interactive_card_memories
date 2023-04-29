@@ -1,18 +1,18 @@
-import "./Styles/Greetings.css"
-import Birthday from "./Styles/Assets/Birthday.jpg"
-import Fathersday from "./Styles/Assets/Fathersday.jpg"
-import Graduation from "./Styles/Assets/Graduation.jpg"
-import Mothersday from "./Styles/Assets/Mothers day.jpeg"
-import Valentines from "./Styles/Assets/Valentines.jpg"
+import "../Styles/Greetings.css"
+import Babyshower from "./Styles/Babyshower.webp"
+import Catholic from "./Styles/Catholic.jpg"
+import Graduation from "./Styles/Graduation.png"
+import Quinceanera from "./Styles/Quinceanera.jpg"
+import Wedding from "./Styles/Wedding.jpg"
 import { useState } from "react"
-import { Greetings_icons } from "./Greetings_icons"
-import { Greetings_fontsizes } from "./Greetings_fontsizes"
-export const Greetings = () => {
+import { Invitation_icons } from "./Invitation_icons"
+import { Invitation_fontsizes } from "./Invitation_fontsizes"
+export const Invitation = () => {
     const [size,setSize] = useState(10)
   const [horizontally,setHorizontally] = useState(0)
   const [vertically,setVertically] = useState(0)
-    const arreglodeimagenes = [{ ID: 1, img: Birthday }, { ID: 2, img: Fathersday }, { ID: 3, img: Graduation }]
-    const arreglodeimagenes2 = [{ ID: 4, img: Mothersday }, { ID: 5, img: Valentines }]
+    const arreglodeimagenes = [{ ID: 1, img: Babyshower }, { ID: 2, img: Catholic }, { ID: 3, img: Graduation }]
+    const arreglodeimagenes2 = [{ ID: 4, img: Quinceanera }, { ID: 5, img: Wedding }]
     const [workImage, setWorkImage] = useState("")
     const [activeImageButton, setActiveImageButton] = useState(false)
     const [activeIconButton, setActiveIconButton] = useState(false)
@@ -24,7 +24,7 @@ export const Greetings = () => {
     return (
         <div>
             <div className="header2">
-                <h1 style={{fontSize: "45px", color:"black"}}>Greetings</h1>
+                <h1 style={{fontSize: "45px", color:"black"}}>Invitation</h1>
             </div>
             <div className="content2">
                 <div className="Workhere">
@@ -41,7 +41,6 @@ export const Greetings = () => {
                     setActiveImageButton(false); 
                     setActiveIconButton(false)}} className="Fontssizes">Fonts sizes</button>
                     <button onClick={()=>{alert("Take an screenshot of your card and save it to share with your friends and family")}} className="Googlemaps">Save</button>
-
                 </div>
                 {activeImageButton ?<div className="images">
                     {
@@ -57,7 +56,7 @@ export const Greetings = () => {
                     }
                     {
                         arreglodeimagenes2.map((imagen) => (
-                            <div className="column2" key={imagen.ID}>
+                            <div className="column2"  style={{position:"relative",top:"-238px"}} key={imagen.ID}>
                                 <img onClick={()=>{setWorkImage(imagen.img)}} className="imagesize" src={imagen.img} />
 
                             </div>
@@ -65,9 +64,9 @@ export const Greetings = () => {
                     }
                 </div>:
                 activeIconButton?
-                Greetings_icons(setWorkIcon, iconhorizontally, setIconhorizontally, iconvertically, setIconvertically):""}
+                Invitation_icons(setWorkIcon, iconhorizontally, setIconhorizontally, iconvertically, setIconvertically):""}
                 {
-                    fontsSizes? Greetings_fontsizes(text,setText, horizontally,setHorizontally, size,setSize, vertically,setVertically): ""
+                    fontsSizes? Invitation_fontsizes(text,setText, horizontally,setHorizontally, size,setSize, vertically,setVertically): ""
                 }
         
             </div>
